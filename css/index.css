@@ -1,0 +1,386 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding-top: 70px;
+  background-color: #010420;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  color: #7A85B1;
+  font-size: 40px;
+}
+
+h3 {
+  color: #703A8F;
+}
+
+.pink {
+  color: #E09DF5
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  border-bottom: solid 1px lightgrey;
+  width: 100%;
+  height: 70px;
+  top: 0;
+  background-color: #010420;
+}
+
+.nav .logo {
+  width: 20%;
+  height: auto;
+  margin: 10px 40px;
+  background-image: url('../images/arun-logo-white.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav-bar {
+  margin-right: 20px;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 25px 40px 10px 40px;
+  transition: color 0.2s;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.nav a:hover {
+  color: #7A85B1;
+}
+
+.navbar-mobile-menu {
+  display: none;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.horizontal-social-nav {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.horizontal-social-nav a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  transform: color 0.3s;
+  transform: transform 0.2s;
+}
+
+.social-nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  margin-left: 3%;
+}
+
+.horizontal-social-nav a:hover {
+  color: #E09DF5;
+  transform: scale(1.02);
+}
+
+.social-nav a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  transform: color 0.3s;
+  transform: transform 0.2s;
+}
+
+.social-nav a:hover {
+  color: #E09DF5;
+  transform: scale(1.02);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid lightgrey 1px;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../images/vortex.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 400px;
+  margin: 50px 5px;
+}
+
+.title h1 {
+  font-family: lato;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.title h3 {
+  margin-top: 0;
+  font-family: lato;
+  font-size: 28px;
+  color: white;
+}
+
+.title .name {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.divider {
+  height: 2px;
+  width: 80%;
+  background-color: white;
+  margin: 0px 0px 30px 0px;
+}
+
+.blink-me {
+  animation: blinker 1s linear infinite;
+  color: darkgrey;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.about-me {
+  margin: 30px 0px 150px 0px;
+}
+
+.about-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-layout img {
+  border-radius: 50%;
+  height: 300px;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.education-content {
+  width: 70%;
+  margin: 0px 50px 0px 50px;
+  /* background-color: white; */
+}
+
+.education h4 {
+  font-size: 22px;
+  color: #7A85B1;
+}
+
+.education h5 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.education p {
+  margin:0;
+}
+
+.project-overview {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px 150px 0px;
+}
+
+.tile {
+  height: 300px;
+  border: solid 1px #7A85B1;
+}
+
+.carousel {
+  width: 40%;
+  margin: 20px;
+}
+
+/* Change slider button color */
+.slick-prev:before {
+  color: #7A85B1;
+}
+.slick-next:before {
+  color: #7A85B1;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  margin: 30px 0px 150px 0px;
+}
+
+.button {
+  font-size: 30px;
+  color: #E09DF5;
+  border: solid 2px #E09DF5;
+  padding: 10px;
+  margin: 30px 0px 30px 0px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  color: white;;
+  background: #E09DF5;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  border-top: solid 1px white;
+}
+
+footer p {
+  color: #7A85B1;
+  padding: 10px 0px 10px 0px;
+  font-size: 14px;
+  margin: 0;
+  text-align: center;
+}
+
+/* Responsive */
+/* For tablets */
+@media screen and (max-width: 1024px) {
+  .nav-bar a {
+    font-size: 16px;
+  }
+  .name h1 {
+    font-size: 40px;
+  }
+  .title h3 {
+    font-size: 28px;
+  }
+  .contact {
+    margin: 30px 50px 100px 50px;
+    text-align: center;
+  }
+  .about-layout {
+    margin: 20px 50px 20px 50px;
+  }
+  .school {
+    margin: 0px 20px 0px 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav-bar a {
+    font-size: 14px;
+    padding: 25px 20px 10px 20px;
+  }
+}
+
+
+/* For mobile */
+@media screen and (max-width: 600px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height:auto;
+  }
+  .logo {
+    margin: 10px 0px 10px 0px;
+  }
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0px;
+  }
+  .nav-bar a {
+    text-align: center;
+  }
+  .navbar-mobile-menu {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-link-container {
+    /* Hide by default on mobile */
+    display: none;
+  }
+  .navbar-mobile-menu span {
+    align-self: center;
+  }
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #010420;
+  }
+  .name h1 {
+    font-size: 36px;
+  }
+  .title h3 {
+    font-size: 24px;
+  }
+  .school {
+    margin: 0px 20px 0px 20px;
+  }
+}

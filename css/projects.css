@@ -1,0 +1,349 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    padding-top: 70px;
+    background-color: #010420;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+  }
+
+  h1 {
+      color: white;
+  }
+  
+  h2 {
+    color: #7A85B1;
+    font-size: 40px;
+  }
+  
+  h3 {
+    color: #703A8F;
+  }
+
+  h4 {
+    font-size: 28px;
+    color: #E09DF5;
+    font-weight: normal;
+    margin:0;
+  }
+  
+  .pink {
+    color: #E09DF5;
+  }
+  
+  .capitalize {
+    text-transform: capitalize;
+  }
+
+  .mono {
+    font-family: monospace;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .space-around {
+    justify-content: space-around;
+  }
+  
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    border-bottom: solid 1px lightgrey;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    background-color: #010420;
+  }
+  
+  .nav .logo {
+    width: 20%;
+    height: auto;
+    margin: 10px 40px;
+    background-image: url('../images/arun-logo-white.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .nav-bar {
+    margin-right: 20px;
+  }
+  
+  .nav a {
+    display: inline-block;
+    padding: 25px 40px 10px 40px;
+    transition: color 0.2s;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .nav a:hover {
+    color: #7A85B1;
+  }
+  
+  .navbar-mobile-menu {
+    display: none;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .nav a:hover {
+    color: #7A85B1;
+  }
+
+  .social-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    margin-left: 3%;
+  }
+
+  .social-nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    transform: color 0.3s;
+    transform: transform 0.2s;
+  }
+
+  .social-nav a:hover {
+    color: #E09DF5;
+    transform: scale(1.02);
+  }
+
+  .horizontal-social-nav {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .horizontal-social-nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    transform: color 0.3s;
+    transform: transform 0.2s;
+  }
+  
+  .horizontal-social-nav a:hover {
+    color: #E09DF5;
+    transform: scale(1.02);
+  }
+  
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 100px;
+  }
+
+  header img {
+    border-radius: 50%;
+    height: 300px;
+    margin: 100px;
+  }
+
+  header h1 {
+      margin: 0;
+      font-size: 50px;
+  }
+  
+  .button {
+    font-size: 24px;
+    color: #E09DF5;
+    border: solid 2px #E09DF5;
+    padding: 10px;
+    margin: 30px 0px 30px 0px;;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+    transition: background 0.3s;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button:hover {
+    color: white;;
+    background: #E09DF5;
+  }
+
+  .grid {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 50px 0px 50px 0px;
+  }
+
+  .tile {
+      width: 24%;
+      height: 375px;
+      border: solid white 0.8px;
+      margin: 10px;
+      padding: 20px;
+      transition: background 0.3s;
+      transition: border 0.3s;
+      transition: transform 0.3s;
+      transition: color 0.1s;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+  }
+
+  .tile:hover {
+    background: #7A85B1;
+    border: none;
+    transform: scale(1.02);
+  }
+
+  .tile:hover .project-name {
+    color: #010420;
+  }
+
+  .fa-file-code {
+    font-size: 40px;
+  }
+
+  .fa-terminal {
+    font-size: 26px;
+  }
+
+  .project-name {
+    color: #703A8F;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    margin: 30px 0px 150px 0px;
+  }
+  
+  footer {
+    width: 100%;
+    height: auto;
+    border-top: solid 1px white;
+  }
+  
+  footer p {
+    color: #7A85B1;
+    padding: 10px 0px 10px 0px;
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+  }
+
+/* Responsive */
+@media screen and (max-width: 1050px) {
+  .tile {
+    width: 40%;
+  }
+}
+/* For tablets */
+@media screen and (max-width: 1024px) {
+  .nav-bar a {
+    font-size: 16px;
+  }
+  .contact {
+    margin: 30px 50px 100px 50px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav-bar a {
+    font-size: 14px;
+    padding: 25px 20px 10px 20px;
+  }
+  .title {
+    width: 70%;
+  }
+  .contact {
+    margin: 30px 60px 100px 60px;
+  } 
+}
+
+@media screen and (max-width: 750px) {
+  .tile {
+    width: 80%;
+  }
+  .contact {
+    margin: 30px 70px 100px 70px;
+  }
+}
+
+/* For mobile */
+@media screen and (max-width: 600px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height:auto;
+  }
+  .logo {
+    margin: 10px 0px 10px 0px;
+  }
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0px;
+  }
+  .nav-bar a {
+    text-align: center;
+  }
+  .navbar-mobile-menu {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-link-container {
+    /* Hide by default on mobile */
+    display: none;
+  }
+  .navbar-mobile-menu span {
+    align-self: center;
+  }
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #010420;
+  }
+}
+  
+  
+  
