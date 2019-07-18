@@ -414,10 +414,13 @@ footer p {
   .title h3 {
     font-size: 18px;
   }
+  .education {
+    width: 80%;
+  }
   .school {
     margin: 20px 20px 20px 0px;
   }
   .carousel {
-    width: 60%;
+    width: 80%;
   }
 }
