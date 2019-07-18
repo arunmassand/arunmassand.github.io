@@ -41,12 +41,14 @@ $(document).ready(function(){
 
     $(window).scroll(function (event) {
         var scroll = $(window).scrollTop();
-        if (scroll < 420) {
-            $('.social-nav').hide();
+        var screenWidth = $(window).width();
+        if (screenWidth > 600) {
+            if (scroll < 420) {
+                $('.social-nav').hide();
+            }
+            else {
+                $('.social-nav').show(); 
+            }
         }
-        else {
-            $('.social-nav').show(); 
-        }
-        // Do something
     });
 });
