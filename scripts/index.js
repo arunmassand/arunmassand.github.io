@@ -25,6 +25,13 @@ $(document).ready(function(){
     $('.navbar-mobile-menu').on('click', function() {
         // Shows navbar if not already showing it
         $('.navbar-link-container').slideToggle();
+        if ($('#menu-icon').hasClass("fa-folder")) {
+            console.log('here');
+            $('span.fa-folder').replaceWith('<span id="menu-icon" class="fas fa-folder-open"></span>');
+        }
+        else if ($('#menu-icon').hasClass("fa-folder-open")) {
+            $('span.fa-folder-open').replaceWith('<span id="menu-icon" class="fas fa-folder"></span>');
+        }
     }); 
 
     $(window).on('resize', function(){
