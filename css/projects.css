@@ -159,6 +159,7 @@ html {
   header {
     display: flex;
     justify-content: flex-start;
+    width: 100%;
   }
 
   .title {
@@ -281,6 +282,9 @@ html {
     margin: 30px 50px 100px 50px;
     text-align: center;
   }
+  .title {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -344,7 +348,11 @@ html {
     background-color: #010420;
   }
   .title {
-    width: 95%;
+    width: 100%;
+    margin: 30px 10px 20px 10px;
+  }
+  .project-name {
+    font-size: 28px;
   }
 }
   
