@@ -41,6 +41,10 @@ html {
   .pink {
     color: #E09DF5;
   }
+
+  .blue {
+    color: #7A85B1 !important;
+  }
   
   .capitalize {
     text-transform: capitalize;

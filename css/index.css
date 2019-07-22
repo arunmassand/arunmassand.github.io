@@ -33,6 +33,10 @@ h3 {
   font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif !important;
 }
 
+.blue {
+  color: #7A85B1 !important;
+}
+
 .capitalize {
   text-transform: capitalize;
 }
