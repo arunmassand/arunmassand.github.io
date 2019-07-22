@@ -414,13 +414,23 @@ footer p {
   .title h3 {
     font-size: 18px;
   }
-  .education {
-    width: 80%;
+  .about-layout img {
+    height: 200px;
+  }
+  .align-center {
+    text-align: center;
+  }
+  .education-content {
+    width: 90%;
+    margin: 0px 5px 0px 5px;
   }
   .school {
     margin: 20px 20px 20px 0px;
   }
   .carousel {
     width: 80%;
+  }
+  .project-overview {
+    margin-bottom: 100px;
   }
 }
