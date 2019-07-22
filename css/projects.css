@@ -74,6 +74,7 @@ html {
     height: 70px;
     top: 0;
     background-color: #010420;
+    z-index:1;
   }
   
   .nav .logo {
