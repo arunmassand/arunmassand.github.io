@@ -29,7 +29,8 @@ h3 {
 }
 
 .pink {
-  color: #E09DF5
+  color: #E09DF5;
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif !important;
 }
 
 .capitalize {
@@ -147,7 +148,6 @@ header {
   background-size: cover;
 }
 
-
 .title {
   display: flex;
   flex-direction: column;
@@ -160,9 +160,10 @@ header {
 
 .title h1 {
   font-family: lato;
-  font-size: 60px;
+  font-size: 68px;
   text-transform: uppercase;
   color: white;
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif !important;
 }
 
 .title h3 {
@@ -170,6 +171,7 @@ header {
   font-family: lato;
   font-size: 28px;
   color: white;
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif !important;
 }
 
 .title .name {
@@ -187,7 +189,7 @@ header {
 
 .blink-me {
   animation: blinker 1s linear infinite;
-  color: darkgrey;
+
 }
 
 @keyframes blinker {
