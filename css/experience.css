@@ -347,7 +347,10 @@ html {
     background-color: #010420;
   }
   .experience p {
-    font-size: 9px;
+    font-size: 11px;
+  }
+  .experience li {
+    font-size: 11px;
   }
 }
   
