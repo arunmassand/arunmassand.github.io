@@ -44,6 +44,7 @@ $(document).ready(function(){
         }
     });
 
+    // Social Navbar Responsiveness
     $('.social-nav').hide();
 
     $(window).scroll(function (event) {
@@ -58,4 +59,10 @@ $(document).ready(function(){
             }
         }
     });
-});
+
+    //Scrolling to About Section
+    $('#about-button').click(function() {
+        var position = $('#About').position();
+        $('html, body').animate({ scrollTop: position.top - 70 }, 100);
+    });
+}); 
