@@ -351,7 +351,7 @@ footer p {
     text-align: center;
   }
   .about-layout {
-    margin: 20px 50px 20px 50px;
+    margin: 20px 30px 20px 30px;
   }
   .school {
     margin: 20px 20px 20px 0px;
@@ -362,6 +362,10 @@ footer p {
   .schools {
     display: flex;
     flex-direction: column;
+  }
+  .education-content {
+    width: 80%;
+    margin: 0px;
   }
 }
 
@@ -428,7 +432,7 @@ footer p {
   }
   .education-content {
     width: 95%;
-    margin: 0px 5px 0px 5px;
+    margin: 0px;
   }
   .school {
     margin: 20px 20px 20px 0px;
