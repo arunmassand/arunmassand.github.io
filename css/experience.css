@@ -300,6 +300,9 @@ html {
   .resume-button {
     width: 70%;
   }
+  .experience-block {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -360,6 +363,9 @@ html {
     flex-direction: column;
     justify-content: center;
     background-color: #010420;
+  }
+  .experience-block {
+    width: 95%;
   }
   .experience p {
     font-size: 12px;
