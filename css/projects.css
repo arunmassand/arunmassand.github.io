@@ -325,6 +325,12 @@ html {
   .grid a {
     width: 80%;
   }
+  .tile {
+    background: #7A85B1 !important;
+  }
+  .project-name {
+    color: black !important;
+  }
   .contact {
     margin: 30px 70px 100px 70px;
   }
