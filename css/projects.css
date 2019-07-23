@@ -58,6 +58,10 @@ html {
     text-align: center;
   }
 
+  .white {
+    color: white;
+  }
+
   .flex-row {
     display: flex;
     flex-direction: row;
@@ -199,30 +203,37 @@ html {
   }
 
   .grid {
-      display: flex;
-      width: 100%;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      margin: 0px 0px 50px 0px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px 0px 50px 0px;
+  }
+
+  .grid a {
+    text-decoration: none;
+    color: none;
+    width: 24%;
+    height: 375px;
+    margin: 10px;
   }
 
   .tile {
-      width: 24%;
-      height: 375px;
-      border: solid white 0.8px;
-      margin: 10px;
-      padding: 20px;
-      transition: background 0.3s;
-      transition: border 0.3s;
-      transition: transform 0.3s;
-      transition: color 0.1s;
+    width: 100%;
+    height: 375px;
+    border: solid white 0.8px;
+    padding: 20px;
+    transition: background 0.3s;
+    transition: border 0.3s;
+    transition: transform 0.3s;
+    transition: color 0.1s;
 
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .tile:hover {
@@ -231,20 +242,26 @@ html {
     transform: scale(1.02);
   }
 
+  .tile:hover .mono {
+    color: black !important;
+  }
+
   .tile:hover .project-name {
-    color: #010420;
+    color: #010420 !important;
   }
 
   .fa-file-code {
     font-size: 40px;
+    color: white;
   }
 
   .fa-terminal {
     font-size: 26px;
+    color: white;
   }
 
   .project-name {
-    color: #703A8F;
+    color: #703A8F !important;
     font-size: 32px;
     font-weight: bold;
   }
@@ -273,7 +290,7 @@ html {
 
 /* Responsive */
 @media screen and (max-width: 1050px) {
-  .tile {
+  .grid a {
     width: 40%;
   }
 }
@@ -305,7 +322,7 @@ html {
 }
 
 @media screen and (max-width: 750px) {
-  .tile {
+  .grid a {
     width: 80%;
   }
   .contact {

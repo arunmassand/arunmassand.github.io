@@ -1,0 +1,236 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    padding-top: 70px;
+    background-color: #010420;
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif !important;
+    color: white;
+  }
+
+  h1 {
+      color: #7A85B1;
+  }
+  
+  .capitalize {
+    text-transform: capitalize;
+  }
+
+  .mono {
+    font-family: monospace;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .space-around {
+    justify-content: space-around;
+  }
+  
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    border-bottom: solid 1px lightgrey;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    background-color: #010420;
+    z-index:1;
+  }
+  
+  .nav .logo {
+    width: 20%;
+    height: auto;
+    margin: 10px 40px;
+    background-image: url('../images/arun-logo-white.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .nav-bar {
+    margin-right: 20px;
+  }
+  
+  .nav a {
+    display: inline-block;
+    padding: 25px 40px 10px 40px;
+    transition: color 0.2s;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .nav a:hover {
+    color: #7A85B1;
+  }
+  
+  .navbar-mobile-menu {
+    display: none;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .nav a:hover {
+    color: #7A85B1;
+  }
+
+  .social-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .social-nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    transform: color 0.3s;
+    transform: transform 0.2s;
+  }
+
+  .social-nav a:hover {
+    color: #E09DF5;
+    transform: scale(1.02);
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 180px 0px 180px 0px;
+  }
+
+  .redirect {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      width: 70%;
+      text-align: center;
+  }
+  
+  .button {
+    font-size: 24px;
+    color: #E09DF5;
+    border: solid 2px #E09DF5;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+    transition: background 0.3s;
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    align-self: center;
+    margin: 10px;
+  }
+  
+  .button:hover {
+    color: white;;
+    background: #E09DF5;
+  }
+
+  /* Responsive */
+@media screen and (max-width: 1050px) {
+    .button {
+        width: 25%;
+    }
+    .nav-bar a {
+        font-size: 16px;
+      }
+}
+  
+  @media screen and (max-width: 900px) {
+    .button {
+        width: 30%;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .nav-bar a {
+        font-size: 14px;
+        padding: 25px 20px 10px 20px;
+    }
+    .button {
+        width: 40%;
+    }
+  }
+  
+  /* For mobile */
+  @media screen and (max-width: 600px) {
+    .button {
+        width: 50%;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        height:auto;
+      }
+      .logo {
+        margin: 10px 0px 10px 0px;
+      }
+      .nav-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0px;
+      }
+      .nav-bar a {
+        text-align: center;
+      }
+      .navbar-mobile-menu {
+        display: flex;
+        justify-content: center;
+      }
+      .navbar-link-container {
+        /* Hide by default on mobile */
+        display: none;
+      }
+      .navbar-mobile-menu span {
+        align-self: center;
+      }
+      .navbar-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #010420;
+      }
+  }
+
+  @media screen and (max-width: 500px) {
+    .button {
+        width: 60%;
+    }
+  }
+    
+    
+    
+
+  
+  
+  
