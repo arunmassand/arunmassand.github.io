@@ -316,7 +316,7 @@ html {
   .title {
     margin: 0px 0px 50px 0px;
     align-items: center;
-    width: 60%;
+    width: 70%;
   }
   h2 {
     margin-bottom: 0px;
@@ -367,8 +367,11 @@ html {
   .experience li {
     font-size: 12px;
   }
+  .title {
+    width: 90%;
+  }
   .resume-button {
-    width: 80%;
+    width: 70%;
   }
 }
   
